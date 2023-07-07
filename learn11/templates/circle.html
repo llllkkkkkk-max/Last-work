@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圈子</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="picture/logo.jpg" alt="Logo"></a>
+        <form class="search-form">
+          <input type="text" placeholder="搜索">
+          <button type="submit">搜索</button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">主页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="circle.html">圈子</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="write.html">书评</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="log.html">日志</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">我的</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="circle-section">
+    <div class="container">
+      <h2>已提交的圈子</h2>
+      <div id="submitted-circles"></div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2>圈子</h2>
+    <form id="circle-form">
+      <div class="form-group">
+        <label for="circle-title">圈子名</label>
+        <input type="text" id="circle-title" name="circle-title" required>
+      </div>
+      <div class="form-group">
+        <label for="circle-content">圈子内容</label>
+        <textarea id="circle-content" name="circle-content" required></textarea>
+      </div>
+      <button type="submit">提交</button>
+    </form>
+  </div>
+
+  <script src="js/circle.js"></script>
+</body>
+
+</html>

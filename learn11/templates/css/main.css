@@ -1,0 +1,93 @@
+/* 导航栏 */
+.navbar {
+  background-color: #f0ad4e;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-nav .nav-item {
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* 搜索框 */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 最新列表 */
+.latest-section {
+  margin-top: 30px;
+}
+
+.latest-section h2 {
+  margin-bottom: 20px;
+}
+
+.circle-list,
+.review-list,
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.circle-item,
+.review-item,
+.blog-item {
+  width: calc(50% - 10px);
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.circle-item h3,
+.review-item h3,
+.blog-item h3 {
+  margin-top: 0;
+}
+
+.circle-item a,
+.review-item a,
+.blog-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.circle-item a:hover,
+.review-item a:hover,
+.blog-item a:hover {
+  text-decoration: underline;
+}
